@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HistoryGenAI - Interactive History Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+        <p>Loading HistoryGenAI...</p>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo animate__animated animate__fadeInDown">HistoryGenAI</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#try-it">Try It</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="animate__animated animate__fadeInLeft">Explore History Through AI</h2>
+                    <p class="animate__animated animate__fadeInLeft animate__delay-1s">Generate immersive historical experiences from simple event descriptions</p>
+                    <button class="cta-button animate__animated animate__fadeInUp animate__delay-2s" id="exploreBtn">Start Exploring</button>
+                </div>
+                <div class="hero-image animate__animated animate__fadeInRight animate__delay-1s">
+                    <img src="assets/history-icon.svg" alt="History illustration">
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="container">
+                <h2>Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📜</div>
+                        <h3>Event Analysis</h3>
+                        <p>Our AI analyzes historical events to create accurate timelines.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎥</div>
+                        <h3>Video Generation</h3>
+                        <p>Generate explanatory videos from historical event data.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🧠</div>
+                        <h3>Contextual Understanding</h3>
+                        <p>AI provides context and connections between events.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section" id="how-it-works">
+            <div class="container">
+                <h2>How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <p>Enter historical event details or keywords</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <p>Our AI researches and verifies information</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <p>Receive generated content and visualizations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="try-it" id="try-it">
+            <div class="container">
+                <h2>Generate Your History Experience</h2>
+                <div class="input-section">
+                    <textarea id="eventInput" placeholder="Describe a historical event (e.g., 'Moon landing 1969' or 'French Revolution causes')"></textarea>
+                    <div class="controls">
+                        <select id="contentType">
+                            <option value="video">Video Explanation</option>
+                            <option value="timeline">Interactive Timeline</option>
+                            <option value="summary">Detailed Summary</option>
+                        </select>
+                        <button id="generateBtn">Generate</button>
+                    </div>
+                </div>
+                <div class="result-container" id="resultContainer">
+                    <div class="placeholder-result">
+                        <p>Your generated content will appear here...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2023 HistoryGenAI - Hackathon Project</p>
+            <p>Built with ❤️ for history enthusiasts</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
